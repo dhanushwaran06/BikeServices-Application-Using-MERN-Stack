@@ -62,7 +62,6 @@ const ServiceCard = ({ service }) => {
         <p className="text-lg">Location: {service.location}</p>
         <p className="text-lg">Mobile: {service.mobile}</p>
       </div>
-      {/* Add a button to book the service */}
       <div className="px-6 py-4">
         <button
           className="text-black bg-orange-500 w-[150px] h-[45px] hover:bg-orange-400 hover:text-black hover:border-2 hover:border-orange-400 font-bold py-2 px-4 rounded"
@@ -71,7 +70,6 @@ const ServiceCard = ({ service }) => {
           Book Service
         </button>
       </div>
-      {/* Popup form */}
       {showBookingForm && (
         <div className="fixed inset-0 flex items-center justify-center z-50 backdrop-blur-md">
           <div className="bg-white text-black p-6 max-w-lg rounded-lg shadow-lg">

@@ -1,4 +1,6 @@
+import axios from "axios";
 import { useState } from "react";
+import { Redirect } from 'react-router-dom';
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -33,9 +35,20 @@ function LoginPage() {
     }
 
     // Implement your authentication logic here
-    console.log(
-      `Logging in as ${userType} with email: ${email}, password: ${password}, location: ${location}, shop name: ${shopName}, services: ${services}, mobile number: ${mobileNumber}`,
-    );
+    axios.post('http://localhost:5000/login', {
+      method: 'POST',
+      body:{
+        email: email,
+        password: password,
+        type: userType,
+        mobile: mobileNumber
+      }
+    }).then(res => console.log(res))
+    .catch(err => console.log(err));
+
+    {
+      userType === 'Customer' ? <Redirect to="/servicetype" />  : <Redirect to="/shopownerdashboard" />
+    }
   };
 
   return (

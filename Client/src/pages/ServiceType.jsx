@@ -10,23 +10,13 @@ function ServiceType() {
 
   const providedServices = ["General Service", "Oil Change", "Water Wash"];
 
-  // axios.post('http://localhost:5000/login', {
-  //   method: 'POST',
-  //   body:{
-  //     email: 'email',
-  //     password: 'password',
-  //     type: 'Customer',
-  //     mobile: 'mobile'
-  //   }
-  // }).then(res => console.log(res))
-  // .catch(err => console.log(err));
 
-  // useEffect(() => {
-  //   axios.get('http://localhost:5000/services').then((response) => {
-  //   console.log("__services", response.data)
-  //   setServices(response.data);
-  // })
-  // }, []);
+  useEffect(() => {
+    axios.get('http://localhost:5000/services').then((response) => {
+    console.log("__services", response.data)
+    setServices(response.data);
+  })
+  }, []);
 
   useEffect(() => {
     setServices([
@@ -84,9 +74,7 @@ function ServiceType() {
           services.map((service) => {
             return <ServiceCard key={service.name} service={service} />;
           })}
-        {/* {
-            type === customer ? <CutomerComponent></CutomerComponent> : <Provider></Provider>
-          } */}
+        
       </div>
     </div>
   );
