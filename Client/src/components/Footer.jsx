@@ -15,11 +15,6 @@ function Footer() {
         <div className="container mx-auto  py-[10rem]">
           <div className="flex justify-between flex-col md:flex-row  items-center md:items-start  md:gap-[5rem] text-left">
             <div className="flex flex-col w-1/2 md:p-0 py-4 gap-8">
-              {/* <img
-                src={"https://i.imgur.com/520zDfd.png"}
-                alt="footer_logo"
-                className="w-[18rem]"
-              /> */}
               <p className="text-[15px] font-medium text-[#646464]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
                 sed, iure explicabo voluptate temporibus animi nobis enim
