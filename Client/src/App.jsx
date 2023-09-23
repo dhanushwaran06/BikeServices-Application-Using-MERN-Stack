@@ -1,10 +1,8 @@
-// import { Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import HowItWork from "./components/HowItWork";
 import LandingPage from "./components/LandingPage";
 import Services from "./components/Services";
-import PartnersBanner from "./components/partnersBanner";
 import NavBar from "./components/NavBar";
 import { Routes, Route } from "react-router-dom";
 import LoginPage from "./utils/LoginPage";
@@ -24,7 +22,6 @@ const App = () => {
               <Services />
               <HowItWork />
               <AboutUs />
-              <PartnersBanner />
               <Footer />
             </>
           }

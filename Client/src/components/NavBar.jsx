@@ -2,25 +2,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-// import LoginPage from './pages/LoginPage';
-
-// import { Routes, Route, Link } from "react-router-dom"
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Add state for login status
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
   const handleLogin = () => {
-    // Simulate login (you can replace this with actual login logic)
     setIsLoggedIn(true);
   };
 
   const handleLogout = () => {
-    // Simulate logout (you can replace this with actual logout logic)
     setIsLoggedIn(false);
   };
 

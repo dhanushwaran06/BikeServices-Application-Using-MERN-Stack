@@ -1,37 +1,17 @@
-// import general from "../assets/General service check-up.jpg";
-// import oil from "../assets/Oil change.jpg";
-// import wash from "../assets/Water wash.jpg";
-// import serviceIcon from "../assets/customer-support.png";
-// import oiIcon from "../assets/lubrication.png";div
 import { Link } from "react-router-dom";
-
+import serviceBike from "../assets/serrviceBike.jpg"
 const Services = () => {
   return (
     <div className="h-[68vh]">
-      <h1 className=" text-black text-4xl font-bold flex flex-col text-center top-1 relative ">
+      <h1 className=" text-black text-4xl font-bold flex flex-col text-center top-0 relative ">
         Services
       </h1>
       <div className="flex flex-row h-[13.8cm]">
         <div className=" w-[50%]">
-          <p className=" relative top-12 flex">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-            deserunt totam ipsum sequi esse perspiciatis sed reprehenderit
-            suscipit aperiam accusamus, amet est, consectetur quam. Molestiae
-            sed deserunt praesentium aspernatur corporis ea? Aperiam nulla,
-            magni et corrupti ipsam laudantium aliquam. Quisquam voluptas nam in
-            architecto magni corporis, asperiores accusamus. Inventore tempora,
-            eum, exercitationem recusandae eos, magni possimus quae provident
-            vero minus quis. Sequi quod voluptates, iste nostrum beatae minus
-            sunt similique illum amet eum accusantium ipsam ullam minima ea
-            atque repellendus quidem. Ea temporibus nam perspiciatis repellendus
-            id? Itaque deserunt asperiores nostrum natus odio ullam in magnam,
-            cumque obcaecati? Voluptatem corporis labore minima. Maxime
-            repudiandae distinctio quos deleniti. A quia, rem reprehenderit
-            ipsum consectetur in non quo, adipisci molestiae excepturi aperiam!
-          </p>
+          <img src={serviceBike} alt="" />
         </div>
         <div className=" w-[50%]">
-          <p className=" relative top-12 flex">
+          <p className=" relative top-12 flex flex-col justify-evenly">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             expedita fuga laboriosam dolores ab eos minus veritatis, sint
             corrupti dignissimos at doloribus quo sed aspernatur, quam facere

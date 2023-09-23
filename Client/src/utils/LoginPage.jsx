@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { Redirect } from 'react-router-dom';
+import { redirect } from "react-router-dom";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -47,7 +47,7 @@ function LoginPage() {
     .catch(err => console.log(err));
 
     {
-      userType === 'Customer' ? <Redirect to="/servicetype" />  : <Redirect to="/shopownerdashboard" />
+      userType === 'Customer' ? redirect("/servicetype")  : redirect("/shopownerdashboard")
     }
   };
 

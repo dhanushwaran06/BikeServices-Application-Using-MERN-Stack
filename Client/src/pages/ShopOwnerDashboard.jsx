@@ -5,7 +5,6 @@ const ShopOwnerDashboard = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    // Fetch orders for the logged-in shop owner from the backend API
     axios.get('/api/orders').then((response) => {
       setOrders(response.data);
     });
@@ -13,14 +12,12 @@ const ShopOwnerDashboard = () => {
 
   return (
     <div className="min-h-screen bg-orange-500">
-      {/* Header */}
       <header className="bg-black text-white py-4">
         <div className="container mx-auto">
           <h1 className="text-2xl font-semibold">Shop Owner Dashboard</h1>
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="container mx-auto p-4">
         <div className="bg-white rounded-lg shadow-md p-4">
           <table className="w-full table-auto">
